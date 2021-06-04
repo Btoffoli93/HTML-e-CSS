@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis</title>
+</head>
+<body>
+    <h1>Criando imagens Flexiveis</h1>
+    <p>A utilização de imagens Flexíveis tem como principal finalidade o versionamento do site, permitindo que seja carregado imagens de tamanhos específicos e não afetando assim sua capacidade de trafego de informação.</p>
+    <picture> <!--A tag Picture tem como finalidade armazenar a informação de carregamento de diversas imagens, nas quais trabalhando com a tag source permite que seja elaborado imagens flexíveis de acordo com o dimensionamento da plataforma trabalhada-->
+        <source media="(max-width: 550px)" srcset="../images/imagem_pp.png"> <!--Nesse modelo, subistituimos o valor de min-width para max-width na qual iremos procurar a partir desse tamanho ser substituido, permitindo assim que o site tenha um carregamento leve e as imagens não sobrecarregue o site como um todo--> 
+        <source media="(max-width: 750px)" srcset="../images/imagem_p.png">
+        <source media="(max-width: 1050px)" srcset="../images/imagem_m.png">
+        <img src="../images/imagem_g.png" alt="imagem flexivel G"> <!--Aqui incluimos a imagem de tamanho máximo, devido à utilizar de forma crescente as tags, sendo essa considerado a imagem padrão de acesso ao site.-->
+    </picture>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links</h1>
+    <h2>Usando Links Externos</h2>
+    <p>Você pode acessar qualquer link através da tag &lt;a href="URL"&gt;"Nome para acesso"&lt;/a&gt;, como exemplo: <br> <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Acessando o GitHub do Gustavo Guanabara</a></p> <!--No caso estamos verificando um link de acesso externo, ou seja, fora dos arquivos do proprio site-->
+    <!--Para ciração de Links externos é extremamente importante inclusão dos atributos target, indicando abrir em uma nova pagina em branco, para evitar sobreescrever o endereço de origem, também podemos incluir o atributo relativo, que indica a autoria do link à ser direcionado-->
+    <p>Outro Exemplo que podemos dar é: <br> <a href="https://images.google.com.br" target="_self" rel="external">Acesse o Google Imagens aqui</a></p>
+    
+    <h2>Link Internos</h2>
+    <p>Essa pagina encaminha para a <a href="pag002.html" rel="next">Segunda Pagina do Servidor</a></p> <!--Uma das formas de referenciar um link interno é caso a pagina Origem que estivermos criando se encontrar no mesmo ambiente, por meio disso podemos apenas incluir o nome do link para ser referenciado como mostrado nesse exemplo-->
+
+    <p>Essa pagina encaminha para a <a href="Pasta interna/Pag003.html" rel="next">Terceira Pagina do Servidor</a></p>
+    <!-- Para uma criação mais organizada, para criarmos um modelo que esteja internalizado à Páginas, podemos operar da mesma forma, porém sendo informado todo o caminho até encontrar o arquivo, como mostrado no exemplo-->
+
+    <h2>Link Downloads</h2>
+    <p>Exemplo: <a href="downloads/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Download da Aula 10</a></p> <!-- Para criação de uma aba de Dowload, basta utilizar da TAG <a> com o atributo href"Endereço do arquivo" e inclusão do atributo download="Nome do arquivo.tipo do arquivo" e type="Nome do tipo" podendo ser localizado no site: iana.org/assigments/media-types, demonstrado no exemplo abaixo através de um arquivo .rar -->
+
+    <p>Outros tipos, no caso .rar: <a href="downloads/10 - Ligações em toda parte.rar" download="downloads/10 - Ligações em toda parte.rar" type="application/vnd.rar">Downloada aqui</a></p>
+</body>
+</html>
