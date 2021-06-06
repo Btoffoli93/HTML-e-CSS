@@ -13,7 +13,17 @@
         <source media="(max-width: 550px)" srcset="../images/imagem_pp.png"> <!--Nesse modelo, subistituimos o valor de min-width para max-width na qual iremos procurar a partir desse tamanho ser substituido, permitindo assim que o site tenha um carregamento leve e as imagens não sobrecarregue o site como um todo--> 
         <source media="(max-width: 750px)" srcset="../images/imagem_p.png">
         <source media="(max-width: 1050px)" srcset="../images/imagem_m.png">
-        <img src="../images/imagem_g.png" alt="imagem flexivel G"> <!--Aqui incluimos a imagem de tamanho máximo, devido à utilizar de forma crescente as tags, sendo essa considerado a imagem padrão de acesso ao site.-->
+        <img src="./images/imagem_g.png" alt="imagem flexivel G"> <!--Aqui incluimos a imagem de tamanho máximo, devido à utilizar de forma crescente as tags, sendo essa considerado a imagem padrão de acesso ao site.-->
     </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Sunshine - Delicate Steve.mp3</p>
+    <audio src="sounds/Sunshine - Delicate Steve.mp3" type="audio/mpeg" preload="metadata" controls></audio> <!--Modelo de inclusão de apenas um áudio e sem redirecionamento para outros tipos-->
+
+    <audio controls preload="metadata"> <!--Modelo que apresenta um redirecionamento de cima para baixo dos tipos de som, caso falta compatibilidade, no caso, modificando os tipos para poder verificar compatibilidade com os diversos navegadores.-->
+        <source src="sounds/The Colonel - Zachariah Hickman.mp3" type="audio/mpeg"> <!--Inicialmente é estabelecido a reprodução em arquivo MP3, caso não houver compatibilidade, é passado para o modelo abaixo-->
+        <source src="sounds/The Colonel - Zachariah Hickman.ogg" type="audio/ogg"> <!--Caso houver compatibilidade, será executado nesse modelo, no inverso será redirecionado para a mensagem abaixo.-->
+        <p>Infelizmente seu navegador não consegue reproduzir tais áudios. <br><a href="sounds/The Colonel - Zachariah Hickman.wav" type="audio/wav">Clique aqui</a> e faça o download desse audio.</p> <!--Nesse modelo, podemos verificar que irá informar ao usuário sua falta de compatibilidade com os arquivos anteriores e irá indicar um link de acesso para download do arquivo. No caso selecionado o arquvivo em WAV por ser arquivo de melhor qualidade e peso, porém pode ser representado pelo mesmo tipo anteriormente descrito, uma vez que feito o download a reprodução ficará por conta do reprodutor de áudio.-->
+    </audio>
 </body>
 </html>
