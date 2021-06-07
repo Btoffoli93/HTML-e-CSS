@@ -30,17 +30,18 @@
     <p>Estamos fazendo a inclusão de mídia do tipo de vídeos</p>
         <h2>Inclusão de vídeo local</h2>
         <p>Estamos fazendo a sua inclusão no próprio servidor</p>
-            <video controls poster="images/limoes-capa.png" width="600">
-                <source src="videos/meu-video.mp4" type="video/mp4">
+            <video controls poster="images/limoes-capa.png" width="600"> <!--Inclusão de mídia via video por meio da Hospedagem podem gerar custos para o cliente, transformando em um elemento de valor agregado enquanto à sua hospedagem.
+            Elementos como Poster="" Constribuem para a criação de uma folha de rosto para o vídeo permitindo que ele seja executado após a reprodução por parte do cliente.-->
+                <source src="videos/meu-video.mp4" type="video/mp4"> <!-- Funcionalidade semelhante às mídias de áudio, permitindo o acesso em ordem de posicionamento, sendo indicado colocar diferentes tipos por conta de diferentes navegadores. Também é aconselhável mensurar de acordo com o tamanho da mídia-->
                 <source src="videos/meu-video.m4v" type="video/m4v">
                 <source src="videos/meu-video.ogv" type="video/ogg">
                 <source src="videos/meu-video.webm" type="video/webm">
                 <p>Seu navegador não tem compatibilidade com esse arquivo. Caso queira acessa-lo, faça o download <a href="videos/meu-video.mp4" type="video/mp4">clicando aqui.</a></p>
             </video>
         <h2>Inclusão de vídeo externo</h2>
-            <iframe width="600" height="338" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="338" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--A inclusão de vídeos por mídias externas como Youtube, pode ser extremamente vantajoso, por não haver consumo de dados, mas em caso de elementos como youtube pois se trata de um redirecionamento público, não são previsíveis a inserção de redirecionamento no final do vídeo, sendo indicado outro site de hospedagem-->
             <br>
-            <iframe src="https://player.vimeo.com/video/330921359" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/330921359" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> <!--Diferente do youtube, o Vimeo pode apresentar uma retenção por parte dos usuários de acesso ao vídeo e se tornando um ótimo site de hospedagem de conteúdo via vídeos, porém com um custo por conta da plataforma.-->
 
         
 </body>
