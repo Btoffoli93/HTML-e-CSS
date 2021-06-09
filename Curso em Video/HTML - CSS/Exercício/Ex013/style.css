@@ -1,5 +1,5 @@
-@charset "UTF-8";
-
+@charset "UTF-8"; /* Através desse @ criamos uma regra para a estilização em CSS, no caso, foi feito a criação da regra para a utilização de caracteres em UTF-8, permitindo o acesso em acentos e ç */
+/* Aqui estaremos registrando as formas de estilização do site */
 body{
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 20px;
