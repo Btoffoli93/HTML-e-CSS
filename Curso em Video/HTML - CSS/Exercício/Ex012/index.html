@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Inline e Internal</title>
+    <!--A inclusão da tag <style> dentro do campo <head> delimita tudo que for interno como desenvolvimento em CSS, portanto seus comentários devem obedecer a forma padrão do CSS, seguindo por: /*"comentário"*/-->
+    <style> 
+        body{ /*Estilo de configuração de CSS Internal, tem como finalidade a estilização apenas da pagina local*/
+            background-color: lightskyblue; /*Troca da cor de fundo do site*/
+            font-family: Arial, Helvetica, sans-serif; /*Delimita os tipos de fontes do site*/
+            font-size: 20px; /*Delimita o tamanho da fonte*/
+        } 
+        h1{ /*--Configuração geral de todos <h1> encontrado nessa pagina-->*/
+            color: maroon; /*Delimita a cor da fonte*/
+            background-color: lightgrey;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify; /*Delimita o estilo de texto, no caso apresentado por Justificado*/
+            font-size: 0.7em; /*A medição 'x'em faz com que ela se torne uma referência do tamanho padrão apresentado*/
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: mediumblue; background-color: lightskyblue;">Capítulo 1</h1> <!--Forma de estilização inline, com a inclusão de um atributo style, na qual dará condição desse elemento APENAS seja configurado desta forma-->
+        <h2 style="color: lightcoral;">Capítulo 1.1</h2>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae at unde vitae recusandae nisi quaerat tempore ipsa dolore dicta, dolor cum sequi, itaque odio! Natus eligendi atque quisquam nobis.</p>
+        <h2 style="color: lightcoral;">Capítulo 1.2</h2>
+            <p style="text-align: right;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit ea consectetur iure dignissimos mollitia ipsa earum asperiores debitis temporibus blanditiis numquam nulla nesciunt sit, illo eveniet optio porro labore!</p>
+    <h1 style="color: mediumblue;background-color: lightskyblue;">Capítulo 2</h1>
+        <h2 style="color: lightcoral;">Capítulo 2.1</h2>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum cupiditate ipsum velit saepe dolorum doloremque ratione excepturi odit! Reiciendis aut officiis similique expedita explicabo fuga dolorum aliquid cupiditate eius.</p>
+    <h1>Capítulo 3</h1> <!--Pode não aparentar, mas essa parte diferente dos elementos acima, estão seguindo a estrutura de estilização incorporada no cabeçalho do arquivo, sendo uma vantagem de não poluir o código.-->
+        <h2>Capítulo 3.1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae at unde vitae recusandae nisi quaerat tempore ipsa dolore dicta, dolor cum sequi, itaque odio! Natus eligendi atque quisquam nobis.</p>
+        <h2>Capítulo 3.2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit ea consectetur iure dignissimos mollitia ipsa earum asperiores debitis temporibus blanditiis numquam nulla nesciunt sit, illo eveniet optio porro labore!</p>
+    <h1>Capítulo 4</h1>
+        <h2>Capítulo 4.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum cupiditate ipsum velit saepe dolorum doloremque ratione excepturi odit! Reiciendis aut officiis similique expedita explicabo fuga dolorum aliquid cupiditate eius.</p>
+</body>
+</body>
+</html>
