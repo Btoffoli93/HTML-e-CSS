@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightskyblue;
+    text-align: justify;
+    color: white;
+}
+a{
+    text-decoration: underline;
+    color: yellow;
+}
+#div1 h1{ /*Através do # estaremos direcionando a estilização para todos os arquivos com o nome daquela ID pertencente à aquela div*/
+    color: red;
+}
+#div1 h2{
+    color: pink;
+}
+#div1 > h2{
+    color: grey;
+    background-color: honeydew;
+}
+.di2 h1{ /*Através do . estaremos direcionando a estilização para todos o conteudo com o nome daquela CLASS pertencente à aquela DIV, no caso permitindo atingir mais de um estilo interno*/
+    color: orange;
+}
+#div15 p{ /* Através desse elemento conseguimos verificar que apenas o parágrafo dentro da ID foi estilizado desta forma*/
+    font-size: 15px;
+    text-align: center;
+}
+
+.d1 p {
+    background-color: blue;
+} /* Vistoriando esse comando no site, vemos que todo elemento pertentence à class d1 (não interno à mesma div) acaba sendo estilizado*/
