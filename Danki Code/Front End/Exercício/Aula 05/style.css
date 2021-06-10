@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu{ /*Tratá-se da formatação de toda a DIV: Menu e é uma forma de chamada generalizada*/
+    display: block; 
+    width: 1000px;
+    /*Determina o tamanho em comprimento dessa div*/
+    background-color: lightsalmon;
+    /*Determina a cor de fundo da Div*/
+    margin: 15px auto; /*Campo generalizado das margens EXTERNAS, sendo o primeiro valor referente à medidas no eixo y e o segundo no eixo x margin: y x;*/
+    margin-left: 10px; /*Referente apenas à margem EXTERNA da esquerda para direita*/
+    margin-right: 10px; /*Referente apenas à margem EXTERNA da direita pra esquerda*/
+    margin-top: 10px; /*Referente à margem EXTERNA acima*/
+    margin-bottom: 10px; /*Referente à margem EXTERNA abaixo*/
+    
+    padding: 10px 25px; /*Campo generalizado das margens INTERNAS, sendo usualmente utilizado como no campo margin, sendo padding y x;*/
+    padding-left: 40px; /*Referente apenas à margem INTERNA da esquerda para direita*/
+    padding-right: 40px; /*Referente apenas à margem INTERNA da direita pra esquerda*/
+    padding-top: 50px; /*Referente à margem INTERNA acima*/
+    padding-bottom: 70px; /*Referente à margem INTERNA abaixo*/
+    
+    text-align: left;
+}
+div.menu{ /*Assim como no modelo acima, estamos solicando a estilização na classe MENU, porém com um detalhamento na sua chamada, mantendo assim uma PRIORIDADDE */
+    width: 700px;
+    color: lightseagreen;
+}
+.menu > a { /*Essa forma de solcitação, trata-se de um elmento específico em cima das tag's a, e apresenta um comportamento de relevância semelhante ao da tag abaixo. Porém apresenta uma solicitação direta*/
+    color: lightslategrey;
+    text-decoration: underline; /*Fazer a retirada de Underline em caso de tags de ancora do modo padrão para o modelo sem decoração*/
+
+    border-color: rgb(255, 255, 255); /*Determina a cor de uma borda*/
+    border-left: 1px; /*Cria um campo de borda ao lado esquerdo, sendo esse 1px o distânciamento da borda*/
+    border-right: 4px; /*Cria um campo de borda ao lado direito*/
+    border-top: 2px; /*Cria um campo de borda a cima*/
+    border-bottom: 3px; /*Cria um campo de borda abaixo*/
+    border-width: 2px; /*Determina a expessura em pixels da borda*/
+    border-style: solid; /*Determinao o estilo da borda apresentado*/
+    border: 3px solid green; /* Forma generalizada de determinar a borda, sendo sua expessura inicial, seu estilo e seguido da sua coloração*/
+    
+}
+
+.menu a{ /*Segundo exemplo de solicitação, no caso, a tag que apresentar posterior no código, será a considerada pela CSS*/
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px 10px;
+}
+
