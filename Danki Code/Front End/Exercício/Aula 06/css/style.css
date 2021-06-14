@@ -1,0 +1,48 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap'); /*Maneira pela qual podemos importar uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lobster&display=swap');
+/*Podemos encontrar vários conteúdos de linguagens de marcação e de programação vinculado ao desenvolvimento WEB no site: https://www.w3schools.com/css/default.asp*/
+
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,body{ /*Por padrão as configurações do HTML e BODY não vem na altura 100%, sendo indicado sua colocação para criação de conteúdo responsivo.
+Conteúdo Responsivo pode ser considerado aquilo que se adpta de acordo com o tamanho da plataforma de acesso*/
+
+    height: 100%;
+    width: 100%;
+}
+
+div.artigo{
+    width: 640px;
+    margin: 40px auto;
+    text-align: center;
+
+    
+}
+.artigo h1{
+    font-family: 'Hammersmith One'/*Fonte importada*/, sans-serif;
+    color: white;
+    background-color: lightblue;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    
+}
+.artigo p{
+    font-family: 'Lobster', serif;
+    font-size: 24px;
+    line-height: 50px; /*Propriedade para fazer o dimensionamento de espaçamento entre linhas em um texto*/
+    font-weight: bold;
+    text-align: justify;
+    margin-top: 20px;
+    letter-spacing: 25px; /*Propriedade para fazer o dimensionamento do espaçamento entre letras do texto*/
+}
+
+div.texto {
+    width: 65%; /*Quando fazemos a alocação via % e não px estamos informando que ela se trata de uma característica interligada com outra, no caso, conectado ao html e body acima, permitindo a criação de conteúdo responsivo.*/
+    text-align: left;
+    margin:  35% auto;
+}
