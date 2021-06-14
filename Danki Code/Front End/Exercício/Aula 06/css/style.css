@@ -13,11 +13,10 @@ html,body{ /*Por padrão as configurações do HTML e BODY não vem na altura 10
 Conteúdo Responsivo pode ser considerado aquilo que se adpta de acordo com o tamanho da plataforma de acesso*/
 
     height: 100%;
-    width: 100%;
 }
 
 div.artigo{
-    width: 640px;
+    width: 1280px;
     margin: 40px auto;
     text-align: center;
 
@@ -44,5 +43,21 @@ div.artigo{
 div.texto {
     width: 65%; /*Quando fazemos a alocação via % e não px estamos informando que ela se trata de uma característica interligada com outra, no caso, conectado ao html e body acima, permitindo a criação de conteúdo responsivo.*/
     text-align: left;
-    margin:  35% auto;
+    margin:  0 auto;
+}
+
+.lista li,.lista2 li{
+    list-style-position: inside;
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.lista .item3{ /* Forma de direcionar a estilização mais detalhada, para Classes internas à outras. Esta forma de direcionamento é tão específico quanto ao mostrado abaixo.*/
+    color: red;
+}
+
+.item3, .item2_3{
+    text-align: center;
 }
