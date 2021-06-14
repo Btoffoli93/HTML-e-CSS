@@ -61,3 +61,33 @@ div.texto {
 .item3, .item2_3{
     text-align: center;
 }
+
+.zero{ 
+    width: 800px;
+    height: 800px;
+    margin: 10px auto;
+    background-color: green;
+}
+
+.zero > .um {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+.zero > .dois{
+    width: 350;
+    height: 350px;
+    background-color: grey; 
+}
+.zero > .quatro{
+    width: 800px;
+    height: 40px;
+    background-color: pink;  
+}
+.zero > .dois > .tres {
+    width: 120;
+    height: 120px;
+    background-color: black; 
+    margin-top: 10px;
+}
+
