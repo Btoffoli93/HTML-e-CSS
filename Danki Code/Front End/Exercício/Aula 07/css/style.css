@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+html,body{
+    height: 100%;
+}
+
+.tipo1{
+    color: blue;
+} /*Podemos verificar na pagina do Index que o modelo apresentado inclui a class para as duas tags, tanto a <p> quanto <a>, já que a tag <a> apresenta duas tags, logo todo estilização definida aqui preenxerá o campo de ambas*/
+
+a.link_ {
+    font-size: 40px;
+} /*Nesse caso, podeos verificar que existe uma prioridade na sua estilização, por apresentar uma característica mais definida, fazendo assim no caso que seja prioritário, mesmo se incluido anterior no código CSS*/
+
+.link_{
+    text-decoration: none;
+    font-size: 20px;
+
+} /*Já nesse caso, verificamos que apenas foi preenxido os elementos da tag link_, também podemos concluir que essa estilização é mais específica por se encontra "na frente" durante a sua inclusão no código CSS que garante prioridade na sua estilização, mantendo prioridade nos últimos declarados. */
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    text-align: center;
+
+}
+
+.article{
+    margin: 0 auto;
+    width: 100%; /*Largura*/
+    height: 10%; /*Altura*/
+    min-width: 50%; /*O elemento min apresenta prioridade sobre o elemento max que consequentemente apresenta prioridade sobre o elemento em si.*/
+    max-width: 20%;
+    min-height: 50%; /*Através do elemento mínimo, determinamos qual seria essa medição perante ao tamanho da tela, sendo um assunto introdutório à elaboração de site responsivo.*/
+    max-height: 20%;
+    background-color: red;
+}
