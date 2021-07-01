@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+head,body{
+    height: 100%;
+}
+
+.test h1{
+    /*Sistema de Cores*/
+    color: rgb(240, 0, 0); /*Hex: #f00000 | rgb (240,0,0) | hsl: 0,100%,47%
+    através do sistema rgb, são posicionado de 0 à 255 em três escalas diferentes para a leitura de cores, sendo a representação da fusão entre Vermelho, Verde e Azul*/
+    color: #0f0000; /*Hex: #0f0000 | rgb (15,0,0) | hsl: 0,100%,47%
+    Assim como no sistema RBG posiciona em sistema hexadecimal à cada 2 unidades para criação de cores por 6 caracteres, sendo em pares representado por Vermelho, Verde e Azul*/
+    color: hsl(0, 100%, 50%); /*Hex: #f00000 | rgb (255,0,0) | hsl: 0,100%,47%
+    No sistema hsl, são adotados uma forma ciclíca de realização da matriz de cores, onde o primeiro caracter indica sua tonalidade, o segundo sua saturação e o terceiro sua luminosidade, para criação de elementos coloiros*/
+    
+    color: #ff000022; /*aqui vemos uma expansão do sistema de cores, onde irá indicar sua opacidade, podendo de 0 à 1 ou 00 à ff (sistema hexadecimal) criando assim um nível de transparência nas cores*/
+} 
